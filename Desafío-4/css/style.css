@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #823f12;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 40px;
+  border-radius: 50px 0;
+}
+header header {
+  padding: 20px auto;
+}
+
+body section {
+  display: flex;
+  flex-direction: column;
+}
+body section h1 {
+  font-size: 25px;
+  margin-top: 40px;
+  font-family: "Roboto", sans-serif;
+  align-self: center;
+}
+body section div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+body section div span {
+  font-family: "Roboto", sans-serif;
+}
+body section div button {
+  width: auto;
+  align-self: center;
+}
+body .newTaskDiv {
+  padding: 5px;
+  margin: 10px auto;
+  border: solid 1px black;
+  width: 40%;
+  word-wrap: break-word;
+  align-self: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
