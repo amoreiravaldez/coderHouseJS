@@ -1,0 +1,61 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    vertical-align: center;
+    margin: auto;
+    border: 1px solid white;
+    width: 80%;
+    height: 40%;
+    color: white;
+}
+
+#tierra {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+#planetaSeleccionado {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+#pesoTierra {
+    margin: auto;
+    width: 100%;
+    height: 90%;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 12rem;
+    text-align: center;
+}
+
+#pesoPlanetaSeleccionado {
+    margin: auto;
+    width: 100%;
+    height: 90%;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 12rem;
+    text-align: center;
+}
+
+#text1, #text2 {
+    align-self: center;
+    margin: 10px;
+    font-size: 2rem;
+}
