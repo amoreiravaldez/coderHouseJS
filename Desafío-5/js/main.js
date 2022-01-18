@@ -7,11 +7,12 @@ let currentTotalCost = 0;
 
 btnAddNewItem.addEventListener("click", () => {
     
-    // Guardo en una variable el titulo del nuevo item.
-    const newItemTitle = asknewItemTitle();
+    // Utilizo una única función para solicitar los valores de título del item y prompt, esta función devuelve un objeto que guardo en una variable.
+    const newItemDetails = asknewItemDetails();
 
-    // Guardo en una variable el costo del nuevo item.
-    const newItemCost = askNewItemCost();
+    // Separo los datos de título y costo para validaciones posteriores.
+    const newItemTitle = newItemDetails.itemTitle;
+    const newItemCost = newItemDetails.itemCost;
 
     // Valido si el costo ingresado es un número luego de haberlo parseado en la función anterior. Si lo es ejecuto las instrucciones de agregar el item, si no es un número muestro un mensaje notificando el error y salgo de la función.
 
@@ -23,7 +24,7 @@ btnAddNewItem.addEventListener("click", () => {
     } else {
 
         // Calculo el valor del nuevo costo total.
-        currentTotalCost = updateTotalCost(currentTotalCost,newItemCost)
+        currentTotalCost = previousTotal + costToAdd;
 
         // Actualizo el valor del nuevo costo total en la página.
         document.getElementById("spanTotalCost").innerHTML = `Costo Total: ARS $${currentTotalCost}`
@@ -38,21 +39,10 @@ btnAddNewItem.addEventListener("click", () => {
 });
 
 // Solicito que el usuario ingrese el título de la nueva tarea
-const asknewItemTitle = () => {
- 
+const asknewItemDetails = () => {
+
     const itemTitle = prompt("Por favor, ingresa un nuevo item para tu presupuesto.");
-    return itemTitle;
-}
-
-// Solicito que el usuario ingrese la duración estimada de la nueva tarea
-const askNewItemCost = () => {
-
     const itemCost = parseFloat(prompt("Por favor, ingresa el costo estimado de este item."));
-    return itemCost;
-}
-
-const updateTotalCost = (previousTotal, costToAdd) => {
-
-    return previousTotal + costToAdd;
+    return { itemTitle, itemCost };
 }
 
