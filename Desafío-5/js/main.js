@@ -10,39 +10,45 @@ btnAddNewItem.addEventListener("click", () => {
     // Utilizo una única función para solicitar los valores de título del item y prompt, esta función devuelve un objeto que guardo en una variable.
     const newItemDetails = asknewItemDetails();
 
-    // Separo los datos de título y costo para validaciones posteriores.
-    const newItemTitle = newItemDetails.itemTitle;
-    const newItemCost = newItemDetails.itemCost;
-
     // Valido si el costo ingresado es un número luego de haberlo parseado en la función anterior. Si lo es ejecuto las instrucciones de agregar el item, si no es un número muestro un mensaje notificando el error y salgo de la función.
 
-    if (isNaN(newItemCost)) {
+    if (isNaN(newItemDetails.cost)) {
 
         alert("Por favor ingrese un número válido para el nuevo item.");
         return;
 
     } else {
 
-        // Calculo el valor del nuevo costo total.
-        currentTotalCost = previousTotal + costToAdd;
+        // Calculo el valor del nuevo costo total utilizando el método que devuelve el valor total de costo unitario por cantidad de items.
+        currentTotalCost += newItemDetails.amountByQuantity();
 
         // Actualizo el valor del nuevo costo total en la página.
         document.getElementById("spanTotalCost").innerHTML = `Costo Total: ARS $${currentTotalCost}`
 
-        // Agrego un div en la página web para mostrar el item nuevo con su costo.
+        // Agrego un div en la página web para mostrar el item nuevo con su costo unitario y costo total.
         const newTaskDiv = document.createElement('div');
-        newTaskDiv.innerHTML = `Item: ${newItemTitle}. El costo del mismo es de  ARS $${newItemCost}`;
+        newTaskDiv.innerHTML = `Item: ${newItemDetails.title}. El costo unitario del mismo es de  ARS $${newItemDetails.cost}. El costo total por este item es de ARS $${newItemDetails.amountByQuantity()}.`;
         newTaskDiv.className = 'newTaskDiv';
         document.body.appendChild(newTaskDiv);
 
     }
 });
 
-// Solicito que el usuario ingrese el título de la nueva tarea
+// Solicito que el usuario ingrese el título del nuevio item, su costo unitario y la cantidad a presupuestar.
 const asknewItemDetails = () => {
-
     const itemTitle = prompt("Por favor, ingresa un nuevo item para tu presupuesto.");
-    const itemCost = parseFloat(prompt("Por favor, ingresa el costo estimado de este item."));
-    return { itemTitle, itemCost };
+    const itemCost = parseFloat(prompt("Por favor, ingresa el costo unitario de este item."));
+    const itemQuantity = parseFloat(prompt("Por favor, ingresa la cantidad de este item."));
+    const newUserItem = new Item (itemTitle,itemCost, itemQuantity)
+    return newUserItem;
 }
 
+// Constructor del objeto item.
+function Item (newTitle, newCost, newQuantity) {
+    this.title = newTitle;
+    this.cost = newCost;
+    this.quantity = newQuantity;
+    this.amountByQuantity = () => { 
+        return newCost * newQuantity;
+    }
+}
