@@ -10,12 +10,11 @@ btnAddNewItem.addEventListener("click", () => {
     // Utilizo una única función para solicitar los valores de título del item y prompt, esta función devuelve un objeto que guardo en una variable.
     const newItemDetails = asknewItemDetails();
 
-    // Valido si el costo ingresado es un número luego de haberlo parseado en la función anterior. Si lo es ejecuto las instrucciones de agregar el item, si no es un número muestro un mensaje notificando el error y salgo de la función.
+    // Valido si el costo ingresado o la cantidad ingresada  son números luego de haberlos parseado en la función anterior. Si lo son ejecuto las instrucciones de agregar el item, si no es un número muestro un mensaje notificando el error y salgo de la función.
 
-    if (isNaN(newItemDetails.cost)) {
+    if (isNaN(newItemDetails.cost) || isNaN(newItemDetails.quantity)) {
 
-        alert("Por favor ingrese un número válido para el nuevo item.");
-        return;
+        alert("El costo unitario o la cantidad del item son incorrectas. Por favor ingrese un número válido para el nuevo item.");
 
     } else {
 
@@ -30,7 +29,6 @@ btnAddNewItem.addEventListener("click", () => {
         newTaskDiv.innerHTML = `Item: ${newItemDetails.title}. El costo unitario del mismo es de  ARS $${newItemDetails.cost}. El costo total por este item es de ARS $${newItemDetails.amountByQuantity()}.`;
         newTaskDiv.className = 'newTaskDiv';
         document.body.appendChild(newTaskDiv);
-
     }
 });
 
@@ -44,11 +42,13 @@ const asknewItemDetails = () => {
 }
 
 // Constructor del objeto item.
-function Item (newTitle, newCost, newQuantity) {
-    this.title = newTitle;
-    this.cost = newCost;
-    this.quantity = newQuantity;
-    this.amountByQuantity = () => { 
-        return newCost * newQuantity;
+class Item {
+    constructor (newTitle, newCost, newQuantity) {
+        this.title = newTitle;
+        this.cost = newCost;
+        this.quantity = newQuantity;
+        this.amountByQuantity = () => { 
+            return newCost * newQuantity;
+        }
     }
 }
