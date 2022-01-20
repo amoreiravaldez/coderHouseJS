@@ -229,12 +229,13 @@ footer nav ul li {
   margin-top: 20px;
   padding: 20px;
   width: 30%;
-  height: fit-content;
-  min-height: 300px;
+  height: 40%;
   background: white;
   background: linear-gradient(150deg, rgba(255, 255, 255, 0.3141631653) 14%, white 100%);
   border-radius: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .index main #services .services-products .services-product-items h4 {
   font-size: 1.8em;
@@ -243,6 +244,15 @@ footer nav ul li {
   padding-top: 20px;
   font-size: 1.2em;
   text-align: justify;
+}
+.index main #services .services-products .services-product-items .services-accountant-addition, .index main #services .services-products .services-product-items .services-administrator-addition, .index main #services .services-products .services-product-items .services-it-addition {
+  margin-top: auto;
+  justify-content: center;
+  align-self: center;
+  height: 40px;
+  width: 30%;
+  padding: 10px;
+  background-color: #4b56e3;
 }
 .index main #contact-us {
   height: calc(100vh - 60px);
