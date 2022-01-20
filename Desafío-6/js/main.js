@@ -28,9 +28,9 @@ const newWorkerDetails = (workerId) => {
 
         case 'services-accountant':
             
-            workerTitle = prompt("Por favor, ingresa el número de contadores que necesita para el desarrollo de su proyecto:");
-            workerCostPerHour = parseFloat(prompt("Por favor, ingresa el monto que se encuentra dispuesto a abonar por hora de trabajo."));
-            hoursQuantity = parseFloat(prompt("Por favor, ingresa la cantidad de horas mensuales que estima que cada contador deberá trabajar."));
+            workerTitle = prompt("Por favor, ingrese el número de contadores estimado para su proyecto");
+            workerCostPerHour = parseFloat(prompt("Por favor, ingrese el monto dispuesto a abonar por hora de trabajo"));
+            hoursQuantity = parseFloat(prompt("Por favor, ingrese la cantidad de horas mensuales de trabajo estimadas"));
             newWorkerItem = new Item (workerTitle,workerCostPerHour, hoursQuantity);
             break;
 
@@ -38,7 +38,7 @@ const newWorkerDetails = (workerId) => {
 
             workerTitle = prompt("Por favor, ingresa el número de administradores que necesita para el desarrollo de su proyecto:");
             workerCostPerHour = parseFloat(prompt("Por favor, ingresa el monto que se encuentra dispuesto a abonar por hora de trabajo."));
-            hoursQuantity = parseFloat(prompt("Por favor, ingresa la cantidad de horas mensuales que estima que cada administrador deberá trabajar."));
+            hoursQuantity = parseFloat(prompt("Por favor, ingrese la cantidad de horas mensuales de trabajo estimadas"));
             newWorkerItem = new Item (workerTitle,workerCostPerHour, hoursQuantity);
             break;
 
@@ -46,7 +46,7 @@ const newWorkerDetails = (workerId) => {
 
             workerTitle = prompt("Por favor, ingresa el número de programadores que necesita para el desarrollo de su proyecto:");
             workerCostPerHour = parseFloat(prompt("Por favor, ingresa el monto que se encuentra dispuesto a abonar por hora de trabajo."));
-            hoursQuantity = parseFloat(prompt("Por favor, ingresa la cantidad de horas mensuales que estima que cada programador deberá trabajar."));
+            hoursQuantity = parseFloat(prompt("Por favor, ingrese la cantidad de horas mensuales de trabajo estimadas"));
             newWorkerItem = new Item (workerTitle,workerCostPerHour, hoursQuantity);
             break;
 
