@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: black;
+  height: 60px;
+  padding: 0 20px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+header nav ul li {
+  margin: 12px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #0a0918;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: white;
+  height: 20vh;
+  margin-top: auto;
+}
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+footer nav ul li {
+  margin: 12px;
+}
+
+.index main .sections {
+  height: 100vh;
+  scroll-margin-top: 60px;
+}
+.index main #home {
+  background-image: url("/media/images/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.index main #about-us {
+  background-image: url("/media/images/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.index main #services {
+  background-image: url("/media/images/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.index main #contact-us {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */
