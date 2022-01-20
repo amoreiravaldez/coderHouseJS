@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Planificador</title>
+    <title>Emprendimientos - Gestión de Equipos</title>
 </head>
 <body class="index">
         
     <header>
 
         <span>
-            Nombre Organización
+            Organización
         </span>
 
         <nav>
@@ -24,7 +24,7 @@
             </ul>
         </nav>
 
-        <div>
+        <div class="team">
             Arma tu equipo
         </div>
 
@@ -33,24 +33,51 @@
     <main>
         
         <div id="home" class="sections">
-            <h1>Los mejores profesionales, en el mismo lugar</h1>
-            <h2>Nuestro objetivo es ponerte en contacto con el equipo de tus sueños para que puedas alcanzar fácilmente tus objetivos.</h2>
+            <div class="home-shadow">
+                    <div class="home-box">
+                    <h1>LOS MEJORES PROFESIONALES DE CIENCIAS ECONÓMICAS PARA TUS EMPRENDIMIENTOS</h1>
+                    <h2>Nuestro objetivo es ponerte en contacto con el equipo de tus sueños para que puedas alcanzar fácilmente tus objetivos.</h2>                    
+                    <div class="home-buttons">
+                        <div class="home-button-main" onclick="document.querySelector('#services').scrollIntoView({behavior:'smooth'});">
+                            <span>Conoce nuestros servicios</span>
+                        </div>
+                        <div class="home-button-secondary" onclick="document.querySelector('#contact-us').scrollIntoView({behavior:'smooth'});">
+                            <span>Contactanos...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="about-us" class="sections">
-            <h1>Los mejores profesionales, en el mismo lugar</h1>
-            <h2>Nuestro objetivo es ponerte en contacto con el equipo de tus sueños para que puedas alcanzar fácilmente tus objetivos.</h2>
+            <h2>QUIENES SOMOS</h2>
         </div>
 
         <div id="services" class="sections">
-            <h1>Los mejores profesionales, en el mismo lugar</h1>
-            <h2>Nuestro objetivo es ponerte en contacto con el equipo de tus sueños para que puedas alcanzar fácilmente tus objetivos.</h2>
+
+            <div class="services-descriptions">
+                <h2>NUESTROS SERVICIOS</h2>
+                <h3>Facilitamos el armado de un equipo multidisciplinario para que vos puedas llevar adelante tu proyecto optimizando tiempo y costos</h3>
+            </div>
+            <div class="services-products">
+                <div class="services-product-items">
+                    <h4>Contadores</h4>
+                    <h5>Dedicados a llevar la contabilidad de tu emprendimiento, registran sus estados económicos y brindan asesoramiento relacionado con los organismos tributarios correspondientes.</h5>
+                    
+                </div>
+                <div class="services-product-items">
+                    <h4>Administradores</h4>
+                    <h5>Cuentan con conocimientos teóricos y técnicos para la gestión responsable, eficaz y eficiente de organizaciones.</h5>
+                </div>
+                <div class="services-product-items">
+                    <h4>Lic. en Sistemas / Programadores</h4>
+                    <h5>Dedicados a crear y gestionar de forma eficiente los recursos digitales para los clientes de tu emprendimiento.</h5>
+                </div>
+            </div>
         </div>
 
         <div id="contact-us" class="sections">
-            <h1>Los mejores profesionales, en el mismo lugar</h1>
-            <h2>Nuestro objetivo es ponerte en contacto con el equipo de tus sueños para que puedas alcanzar fácilmente tus objetivos.</h2>
-        
+
             <footer>
                 <span>
                     Nombre Organización
@@ -58,14 +85,14 @@
         
                 <nav>
                     <ul>
-                        <li onclick="document.querySelector('#home').scrollIntoView();">Home</li>
-                        <li onclick="document.querySelector('#about-us').scrollIntoView();">Sobre Nosotros</li>
-                        <li onclick="document.querySelector('#services').scrollIntoView();">Servicios</li>
-                        <li onclick="document.querySelector('#contact-us').scrollIntoView();">Contactanos</li>
+                        <li onclick="document.querySelector('#home').scrollIntoView({behavior:'smooth'});">Home</li>
+                        <li onclick="document.querySelector('#about-us').scrollIntoView({behavior:'smooth'});">Sobre Nosotros</li>
+                        <li onclick="document.querySelector('#services').scrollIntoView({behavior:'smooth'});">Servicios</li>
+                        <li onclick="document.querySelector('#contact-us').scrollIntoView({behavior:'smooth'});">Contactanos</li>
                     </ul>
                 </nav>
         
-                <div>
+                <div class="team">
                     Arma tu equipo
                 </div>
             </footer>
@@ -73,8 +100,6 @@
 
     </main>
     
-
-
     <script src="js/main.js"></script>
 </body>
 </html>

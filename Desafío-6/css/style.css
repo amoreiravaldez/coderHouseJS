@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   position: sticky;
   top: 0;
   width: 100%;
@@ -24,7 +24,27 @@ header {
   font-weight: bold;
   color: black;
   height: 60px;
-  padding: 0 20px;
+  box-shadow: 0px 7px 14px -8px #000000;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  header span {
+    display: none;
+  }
+}
+@media only screen and (max-width: 575px) {
+  header span {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  header .team {
+    display: none;
+  }
+}
+@media only screen and (max-width: 575px) {
+  header .team {
+    display: none;
+  }
 }
 header nav ul {
   display: flex;
@@ -48,6 +68,36 @@ footer {
   height: 20vh;
   margin-top: auto;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  footer {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 575px) {
+  footer {
+    display: center;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  footer span {
+    display: none;
+  }
+}
+@media only screen and (max-width: 575px) {
+  footer span {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  footer .team {
+    display: none;
+  }
+}
+@media only screen and (max-width: 575px) {
+  footer .team {
+    display: none;
+  }
+}
 footer nav ul {
   display: flex;
   flex-direction: row;
@@ -66,15 +116,133 @@ footer nav ul li {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.index main #home .home-shadow {
+  height: 100%;
+  width: 50%;
+  background: #77b9ff;
+  background: linear-gradient(90deg, rgba(119, 185, 255, 0.4486169468) 46%, rgba(255, 255, 255, 0.2385329132) 51%, rgba(255, 255, 255, 0) 100%);
+  padding: 150px 0px 0px 240px;
+}
+.index main #home .home-shadow .home-box {
+  width: 85%;
+  background-color: rgba(255, 255, 255, 0.165);
+  padding: 30px;
+  margin: auto;
+}
+.index main #home .home-shadow .home-box h1 {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: black;
+  font-size: 3em;
+}
+.index main #home .home-shadow .home-box h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: black;
+  font-size: 1.8em;
+  padding-top: 32px;
+  text-align: left;
+  line-height: 1.5em;
+}
+.index main #home .home-shadow .home-box .home-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  height: 100 .index main #home .home-shadow .home-box .home-buttons;
+  width: 100%;
+}
+.index main #home .home-shadow .home-box .home-buttons div {
+  display: flex;
+  height: 40px;
+  width: 45%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.index main #home .home-shadow .home-box .home-buttons .home-button-main {
+  color: white;
+  background-color: blue;
+}
+.index main #home .home-shadow .home-box .home-buttons .home-button-secondary {
+  color: white;
+  background-color: rgba(65, 65, 118, 0.693);
+}
 .index main #about-us {
-  background-image: url("/media/images/home.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 2em;
+}
+.index main #about-us h2 {
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
 }
 .index main #services {
-  background-image: url("/media/images/home.jpg");
+  padding: 30px;
+  background-image: url("/media/images/services-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+}
+.index main #services .services-descriptions {
+  width: 60%;
+  align-self: center;
+  background: white;
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.3141631653) 14%, white 100%);
+  color: black;
+  padding: 20px;
+}
+.index main #services .services-descriptions h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  width: 100%;
+}
+.index main #services .services-descriptions h3 {
+  padding-top: 30px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  width: 100%;
+}
+.index main #services .services-products {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.index main #services .services-products .services-product-items {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 20px;
+  width: 30%;
+  height: fit-content;
+  min-height: 300px;
+  background: white;
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.3141631653) 14%, white 100%);
+  border-radius: 20px;
+  text-align: center;
+}
+.index main #services .services-products .services-product-items h4 {
+  font-size: 1.8em;
+}
+.index main #services .services-products .services-product-items h5 {
+  padding-top: 20px;
+  font-size: 1.2em;
+  text-align: justify;
 }
 .index main #contact-us {
   height: calc(100vh - 60px);
