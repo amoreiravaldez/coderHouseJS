@@ -36,6 +36,9 @@ header {
     display: none;
   }
 }
+header .team {
+  cursor: pointer;
+}
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   header .team {
     display: none;
@@ -53,6 +56,7 @@ header nav ul {
 }
 header nav ul li {
   margin: 12px;
+  cursor: pointer;
 }
 
 footer {
@@ -88,6 +92,9 @@ footer {
     display: none;
   }
 }
+footer .team {
+  cursor: pointer;
+}
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   footer .team {
     display: none;
@@ -105,6 +112,7 @@ footer nav ul {
 }
 footer nav ul li {
   margin: 12px;
+  cursor: pointer;
 }
 
 .index main .sections {
@@ -199,7 +207,8 @@ footer nav ul li {
   background: white;
   background: linear-gradient(150deg, rgba(255, 255, 255, 0.3141631653) 14%, white 100%);
   color: black;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
+  margin-bottom: 60px;
 }
 .index main #services .services-descriptions h2 {
   text-align: center;
@@ -253,10 +262,11 @@ footer nav ul li {
   width: 30%;
   padding: 10px;
   background-color: #4b56e3;
+  cursor: pointer;
 }
 .index main #services .services-totals {
-  justify-self: center;
-  width: 90%;
+  margin-bottom: auto;
+  width: 100%;
   margin-top: 30px;
   padding: 20px;
   font-family: "Roboto", sans-serif;

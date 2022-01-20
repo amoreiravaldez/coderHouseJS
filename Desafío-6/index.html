@@ -24,7 +24,7 @@
             </ul>
         </nav>
 
-        <div class="team">
+        <div class="team" onclick="document.querySelector('#services').scrollIntoView({behavior:'smooth'});">
             Arma tu equipo
         </div>
 
@@ -60,18 +60,18 @@
                 <h3>Facilitamos el armado de un equipo multidisciplinario para que vos puedas llevar adelante tu proyecto optimizando tiempo y costos</h3>
             </div>
             <div class="services-products">
-                <div class="services-product-items">
+                <div id="services-accountant" class="services-product-items btnAddNewItem">
                     <h4>Contadores</h4>
                     <h5>Dedicados a llevar la contabilidad de tu emprendimiento, registran sus estados económicos y brindan asesoramiento relacionado con los organismos tributarios correspondientes.</h5>
                     <div class="services-accountant-addition">Añadir</div>
                 </div>
-                <div class="services-product-items">
+                <div id="services-administrator" class="services-product-items btnAddNewItem">
                     <h4>Administradores</h4>
                     <h5>Cuentan con conocimientos teóricos y técnicos para la gestión responsable, eficaz y eficiente de organizaciones.</h5>
                     <div class="services-administrator-addition">Añadir</div>
                 </div>
-                <div class="services-product-items">
-                    <h4>Lic. en Sistemas / Programadores</h4>
+                <div id="services-it" class="services-product-items btnAddNewItem">
+                    <h4>Programadores</h4>
                     <h5>Dedicados a crear y gestionar de forma eficiente los recursos digitales para los clientes de tu emprendimiento.</h5>
                     <div class="services-it-addition">Añadir</div>
                 </div>
@@ -95,7 +95,7 @@
                     </ul>
                 </nav>
         
-                <div class="team">
+                <div class="team" onclick="document.querySelector('#services').scrollIntoView({behavior:'smooth'});">
                     Arma tu equipo
                 </div>
             </footer>
@@ -103,6 +103,7 @@
 
     </main>
     
+    <script src="js/item.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
