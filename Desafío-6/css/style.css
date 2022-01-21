@@ -209,6 +209,7 @@ footer nav ul li {
   color: black;
   padding: 20px 20px 0 20px;
   margin-bottom: 60px;
+  padding-bottom: 20px;
 }
 .index main #services .services-descriptions h2 {
   text-align: center;

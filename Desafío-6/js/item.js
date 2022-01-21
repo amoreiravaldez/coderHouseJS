@@ -1,12 +1,13 @@
 // Constructor del objeto item.
 class Item {
-    constructor (workerTitle, workerCostPerHour, hoursQuantity) {
-        this.title = workerTitle;
+    constructor (workerQuantity, workerCostPerHour, hoursQuantity, workerId) {
+        this.title = workerQuantity;
         this.cost = workerCostPerHour;
         this.quantity = hoursQuantity;
+        this.id = workerId;
     }
     
     amountByQuantity () {
-        return newCost * newQuantity;
+        return this.cost * this.quantity;
     }
 }
