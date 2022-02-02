@@ -120,7 +120,7 @@ footer nav ul li {
   scroll-margin-top: 60px;
 }
 .index main #home {
-  background-image: url("/media/images/home.jpg");
+  background-image: url(../media/images/home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -194,7 +194,7 @@ footer nav ul li {
 }
 .index main #services {
   padding: 30px;
-  background-image: url("/media/images/services-1.jpg");
+  background-image: url(../media/images/services-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -341,6 +341,9 @@ footer nav ul li {
 }
 .index main #contact-us #contact-us-budgets .test:not(:first-child) {
   background-color: rgba(170, 64, 64, 0.919);
+}
+.index main #contact-us #contact-us-budgets .test:nth-child(0n+2) {
+  background-color: rgba(184, 167, 39, 0.919);
 }
 
 /*# sourceMappingURL=style.css.map */

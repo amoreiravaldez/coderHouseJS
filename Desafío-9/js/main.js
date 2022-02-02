@@ -10,7 +10,7 @@ const updateBudget = (budget) => {
     currentTotalCost = budget.totalCost;
 
     // Actualizo el valor del nuevo costo total en la página.
-    document.querySelector(".services-totals").innerHTML = `COSTO ESTIMADO: ARS $${currentTotalCost}`
+    document.querySelector(".services-totals").innerHTML = `Valor Estimado: ARS $${currentTotalCost}`
 
     // Añado un ID al presupuesto y actualizo el número
 
