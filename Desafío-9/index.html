@@ -60,22 +60,71 @@
                 <h3>Facilitamos el armado de un equipo multidisciplinario para que vos puedas llevar adelante tu proyecto optimizando tiempo y costos</h3>
             </div>
             <div class="services-products">
-                <div id="services-accountant" class="services-product-items btnAddNewItem">
+                <div id="services-accountant" class="services-product-items">
                     <h4>Contadores</h4>
                     <h5>Dedicados a llevar la contabilidad de tu emprendimiento, registran sus estados económicos y brindan asesoramiento relacionado con los organismos tributarios correspondientes.</h5>
-                    <div class="services-accountant-addition">Añadir</div>
+                    <div>
+                        <div>
+                            <span>Cantidad</span>
+                            <input type="number" id="services-acc-quantity" value=0 min="0" max="100">
+                        </div>
+
+                        <div>
+                            <span>Horas</span>
+                            <input type="number" id="services-acc-hours" value=0 min="0" max="100">
+                        </div>
+
+                        <div>
+                            <span>Tarifa</span>
+                            <input type="number" id="services-acc-rate" value=0 step="any" min="0" max="100">
+                        </div>
+                    </div>             
+                    <!-- <div class="services-accountant-addition btnAddNewItem">Añadir</div> -->
                 </div>
-                <div id="services-administrator" class="services-product-items btnAddNewItem">
+                <div id="services-administrator" class="services-product-items">
                     <h4>Administradores</h4>
                     <h5>Cuentan con conocimientos teóricos y técnicos para la gestión responsable, eficaz y eficiente de organizaciones.</h5>
-                    <div class="services-administrator-addition">Añadir</div>
+                    <div>
+                        <div>
+                            <span>Cantidad</span>
+                            <input type="number" id="services-adm-quantity" value=0  min="0">
+                        </div>
+
+                        <div>
+                            <span>Horas</span>
+                            <input type="number" id="services-adm-hours" value=0 min="0">
+                        </div>
+
+                        <div>
+                            <span>Tarifa</span>
+                            <input type="number" step="any" id="services-adm-rate" value=0  min="0">
+                        </div>
+                    </div>                    
+                    <!-- <div class="services-administrator-addition btnAddNewItem">Añadir</div> -->
                 </div>
-                <div id="services-it" class="services-product-items btnAddNewItem">
+                <div id="services-it" class="services-product-items">
                     <h4>Programadores</h4>
                     <h5>Dedicados a crear y gestionar de forma eficiente los recursos digitales para los clientes de tu emprendimiento.</h5>
-                    <div class="services-it-addition">Añadir</div>
+                    <div>
+                        <div>
+                            <span>Cantidad</span>
+                            <input type="number" id="services-it-quantity" value=0 min="0" max="100">
+                        </div>
+
+                        <div>
+                            <span>Horas</span>
+                            <input type="number" id="services-it-hours" value=0 min="0" max="100">
+                        </div>
+
+                        <div>
+                            <span>Tarifa</span>
+                            <input type="number" step="any" id="services-it-rate" value=0 min="0" max="100">
+                        </div>
+                    </div>             
+                    <!-- <div class="services-it-addition btnAddNewItem">Añadir</div> -->
                 </div>
             </div>
+            <div class="services-addition btnAddNewItem">Añadir</div>
             <div class="services-totals">COSTO ESTIMADO: ARS $0</div>
         </div>
 
