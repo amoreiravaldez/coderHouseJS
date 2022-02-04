@@ -283,18 +283,22 @@ footer nav ul li {
   -webkit-appearance: none;
   margin: 0;
 }
-.index main #services .services-addition {
-  margin-top: auto;
-  align-self: center;
+.index main #services .button-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  padding: auto;
+}
+.index main #services .button-container .services-addition, .index main #services .button-container #retrieveHistoricalItems, .index main #services .button-container #deleteHistoricalItems, .index main #services .button-container #saveItems {
+  text-align: center;
+  margin: auto;
   height: 40px;
   width: 30%;
   padding: 10px;
   color: white;
   background-color: #4b56e3;
-  align-self: flex-start;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
-  text-align: center;
   margin-left: 30px;
 }
 .index main #services .services-totals {
@@ -318,7 +322,7 @@ footer nav ul li {
   height: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  overflow: scroll;
+  overflow: auto;
 }
 .index main #contact-us #contact-us-budgets .test {
   border: 1px solid black;

@@ -2,7 +2,8 @@
 
 let currentTotalCost = 0;
 let budgetId = 1;
-const historicalBudgets = [];
+let historicalBudgets = [];
+let historicalBudgetsJSON;
 
 const updateBudget = (budget) => {
 
@@ -18,7 +19,6 @@ const updateBudget = (budget) => {
     budgetId +=1;
 
     // Actualizo los presupuestos históricos
-
     historicalBudgets.push(budget);
 
     // Identifico la sección de contacto y borro su contenido
@@ -26,11 +26,10 @@ const updateBudget = (budget) => {
     contactSection.innerHTML = "";
     
     // Ordeno los presupuestos por su costo total
-
     historicalBudgets.sort((a,b) => (a.totalCost > b.totalCost) ? 1 : ((b.totalCost > a.totalCost) ? -1 : 0));
 
     // Imprimo de forma procedural los elementos en el DOM
-
+    
     historicalBudgets.forEach(budgetItem => {
         
         let previousBudget = document.createElement('div');
@@ -40,4 +39,7 @@ const updateBudget = (budget) => {
         previousBudget.setAttribute('class', 'test'); 
         contactSection.appendChild(previousBudget);
     })
+
+    historicalBudgetsJSON = JSON.stringify(historicalBudgets);
+    localStorage.setItem('historicalBudgets', historicalBudgetsJSON);
 }
