@@ -1,10 +1,37 @@
 // Busco todos los botones del DOM que hagan referencia a la clase .btnAddNewItem y loopeo entre ellos
 // con un forEach para añadir un event listener a cada uno.
-
+let navHome = document.querySelectorAll('.button-home');
+let navAboutUs = document.querySelectorAll('.button-about-us');
+let navServices = document.querySelectorAll('.button-services');
+let navContactUs = document.querySelectorAll('.button-contact-us');
 let btnAddNewItem = document.querySelector('.btnAddNewItem')
 let btnretrieveHistoricalItems = document.querySelector('#retrieveHistoricalItems');
 let btndeleteHistoricalItems = document.querySelector('#deleteHistoricalItems');
 let inputWorkerDetails = document.querySelectorAll("input");
+
+navHome.forEach(navBtn => {
+    navBtn.addEventListener('click', () => {
+        document.querySelector('#home').scrollIntoView({behavior:'smooth'});
+    });
+});
+
+navAboutUs.forEach(navBtn => {
+    navBtn.addEventListener('click', () => {
+        document.querySelector('#about-us').scrollIntoView({behavior:'smooth'});
+    });
+});
+
+navServices.forEach(navBtn => {
+    navBtn.addEventListener('click', () => {
+        document.querySelector('#services').scrollIntoView({behavior:'smooth'});
+    });
+});
+
+navContactUs.forEach(navBtn => {
+    navBtn.addEventListener('click', () => {
+        document.querySelector('#contact-us').scrollIntoView({behavior:'smooth'});
+    });
+});
 
 btnAddNewItem.addEventListener('click', () => {
 
@@ -148,3 +175,5 @@ btndeleteHistoricalItems.addEventListener('click', () => {
     document.querySelector('#contact-us-budgets').innerHTML = "";
     document.querySelector(".services-totals").innerHTML = "Los presupuestos han sido borrados";
 });
+
+
