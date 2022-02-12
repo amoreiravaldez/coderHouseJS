@@ -54,3 +54,28 @@ const updateBudget = (budget) => {
     historicalBudgetsJSON = JSON.stringify(historicalBudgets);
     localStorage.setItem('historicalBudgets', historicalBudgetsJSON);
 }
+
+// Desafío 13 - Complementario
+
+// Una vez que se encuentre cargado el documento
+$(document).ready(function () {
+
+
+    // Modifico las propiedades de los botones y divs a display none para hacer uso del fade in.
+    // Entiendo que debería modificarlo en el CSS pero no creo que mantenga esta animación, es solo para el 
+    // desafío complementario.
+
+    $(".home-box").css("display","none");
+    $(".home-button-main").css("display","none");
+    $(".home-button-secondary").css("display","none");
+
+    // Desencadeno la primer animación que trae el div principal, y una vez que se ejecute esa función
+    // realizo la animación del botón principal y luego la del botón secundario.
+    $(".home-box").fadeIn(1200, () => {
+
+        $(".home-button-main").fadeIn(500, () => {
+
+            $(".home-button-secondary").fadeIn(500);
+        });
+    });
+})
