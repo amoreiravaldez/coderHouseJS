@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Emprendimientos - Gestión de Equipos</title>
+</head>
+<body class="index">
+        
+    <header>
+
+        <span>
+            Organización
+        </span>
+
+        <nav>
+            <ul>
+                <li class="button-home">Home</li>
+                <li class="button-about-us">Sobre Nosotros</li>
+                <li class="button-services">Servicios</li>
+                <li class="button-contact-us">Contactanos</li>
+            </ul>
+        </nav>
+
+        <div class="team button-services">
+            Arma tu equipo
+        </div>
+
+    </header>
+
+    <main>
+        
+        <div id="home" class="sections">
+            <div class="home-shadow">
+                    <div class="home-box">
+                    <h1>LOS MEJORES PROFESIONALES DE CIENCIAS ECONÓMICAS PARA TUS EMPRENDIMIENTOS</h1>
+                    <h2>Nuestro objetivo es ponerte en contacto con el equipo de tus sueños para que puedas alcanzar fácilmente tus objetivos.</h2>                    
+                    <div class="home-buttons">
+                        <div class="home-button-main button-services">
+                            <span>Conoce nuestros servicios</span>
+                        </div>
+                        <div class="home-button-secondary button-contact-us">
+                            <span>Contactanos...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about-us" class="sections">
+            <h2>QUIENES SOMOS</h2>
+        </div>
+
+        <div id="services" class="sections">
+
+            <div class="services-descriptions">
+                <h2>NUESTROS SERVICIOS</h2>
+                <h3>Facilitamos el armado de un equipo multidisciplinario para que vos puedas llevar adelante tu proyecto optimizando tiempo y costos</h3>
+            </div>
+            <div class="services-products">
+                <div id="services-accountant" class="services-product-items">
+                    <h4>Contadores</h4>
+                    <h5>Dedicados a llevar la contabilidad de tu emprendimiento, registran sus estados económicos y brindan asesoramiento relacionado con los organismos tributarios correspondientes.</h5>
+                    <div>
+                        <div>
+                            <span>Cantidad</span>
+                            <input type="number" id="services-acc-quantity" value=0 min="0" max="100">
+                        </div>
+
+                        <div>
+                            <span>Horas</span>
+                            <input type="number" id="services-acc-hours" value=0 min="0" max="100">
+                        </div>
+
+                        <div>
+                            <span>Tarifa</span>
+                            <input type="number" id="services-acc-rate" value=0 min="0" max="100">
+                        </div>
+                    </div>             
+                    <!-- <div class="services-accountant-addition btnAddNewItem">Añadir</div> -->
+                </div>
+                <div id="services-administrator" class="services-product-items">
+                    <h4>Administradores</h4>
+                    <h5>Cuentan con conocimientos teóricos y técnicos para la gestión responsable, eficaz y eficiente de organizaciones.</h5>
+                    <div>
+                        <div>
+                            <span>Cantidad</span>
+                            <input type="number" id="services-adm-quantity" value=0  min="0">
+                        </div>
+
+                        <div>
+                            <span>Horas</span>
+                            <input type="number" id="services-adm-hours" value=0 min="0">
+                        </div>
+
+                        <div>
+                            <span>Tarifa</span>
+                            <input type="number" id="services-adm-rate" value=0  min="0">
+                        </div>
+                    </div>                    
+                    <!-- <div class="services-administrator-addition btnAddNewItem">Añadir</div> -->
+                </div>
+                <div id="services-it" class="services-product-items">
+                    <h4>Programadores</h4>
+                    <h5>Dedicados a crear y gestionar de forma eficiente los recursos digitales para los clientes de tu emprendimiento.</h5>
+                    <div>
+                        <div>
+                            <span>Cantidad</span>
+                            <input type="number" id="services-it-quantity" value=0 min="0" max="100">
+                        </div>
+
+                        <div>
+                            <span>Horas</span>
+                            <input type="number" id="services-it-hours" value=0 min="0" max="100">
+                        </div>
+
+                        <div>
+                            <span>Tarifa</span>
+                            <input type="number" id="services-it-rate" value=0 min="0" max="100">
+                        </div>
+                    </div>             
+                    <!-- <div class="services-it-addition btnAddNewItem">Añadir</div> -->
+                </div>
+            </div>
+            <div class="button-container">
+                <div class="services-addition btnAddNewItem">Calcular Nuevo Presupuesto</div>
+                <div id="retrieveHistoricalItems">Mostrar Presupuestos Históricos</div>
+                <div id="deleteHistoricalItems">Borrar presupuestos</div>
+            </div>
+
+            <div class="services-totals">Valor Estimado: ARS $0</div>
+        </div>
+
+        <div id="contact-us" class="sections">
+
+            <div id="contact-us-budgets">
+            </div>
+
+            <footer>
+                <span>
+                    Nombre Organización
+                </span>
+        
+                <nav>
+                    <ul>
+                        <li class="button-home">Home</li>
+                        <li class="button-about-us">Sobre Nosotros</li>
+                        <li class="button-services">Servicios</li>
+                        <li class="button-contact-us">Contactanos</li>
+                    </ul>
+                </nav>
+        
+                <div class="team button-services">
+                    Arma tu equipo
+                </div>
+            </footer>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/workers.js"></script>
+    <script src="js/budget.js"></script> 
+    <script src="js/handler.js"></script>  
+    <script src="js/main.js"></script>
+</body>
+</html>
