@@ -183,14 +183,70 @@ footer nav ul li {
 }
 .index main #about-us {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   justify-content: center;
   padding-top: 2em;
 }
-.index main #about-us h2 {
+.index main #about-us div {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.index main #about-us div h2 {
   font-size: 2em;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
+}
+.index main #about-us #about-us-reviews {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+}
+.index main #about-us #about-us-reviews .personal-data {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  margin: 10px;
+  height: fit-content;
+  width: 45%;
+  height: 30%;
+  padding: 10px;
+  line-height: 40px;
+  text-align: center;
+  word-wrap: break-word;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: black;
+  box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.index main #about-us #about-us-reviews .personal-data div img {
+  margin: auto;
+  padding-right: 20px;
+}
+.index main #about-us #about-us-reviews .personal-data div {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+.index main #about-us #about-us-reviews .personal-data div .reviewer-name-role {
+  text-align: start;
+  margin-bottom: 2px;
+  font-size: 20px;
+}
+.index main #about-us #about-us-reviews .personal-data div .reviewer-location {
+  font-size: 12px;
+  text-align: start;
+}
+.index main #about-us #about-us-reviews .personal-data div .reviewer-feedback {
+  font-style: italic;
+  text-align: start;
+  padding-bottom: 10px;
+}
+.index main #about-us #about-us-reviews .personal-data div .reviewer-qualification {
+  text-align: start;
+  font-size: 20px;
 }
 .index main #services {
   padding: 30px;
