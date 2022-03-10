@@ -41,14 +41,6 @@ const updateBudget = (budget) => {
                                 </div>`
         $("#contact-us-budgets").prepend(itemDescription)
 
-        // previousBudget.setAttribute('class', 'test'); 
-
-        // let previousBudget = document.createElement('div');
-        // previousBudget.innerHTML = `<h4>Presupuesto N°: ${budgetItem.id}</h4>
-        //                         <div>Costo Estimado: $${budgetItem.totalCost}</p>
-        //                         <div>Contadores: ${budgetItem.accountants.quantity}. Administradores: ${budgetItem.administrators.quantity}. Programadores: ${budgetItem.it.quantity}.</b>`;
-        // previousBudget.setAttribute('class', 'test'); 
-        // contactSection.appendChild(previousBudget);
     })
 
     historicalBudgetsJSON = JSON.stringify(historicalBudgets);

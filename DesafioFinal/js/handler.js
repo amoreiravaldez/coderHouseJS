@@ -28,30 +28,6 @@ $('.button-contact-us').click(function() {
     document.querySelector('#contact-us').scrollIntoView({behavior:'smooth'});
 })
 
-// navHome.forEach(navBtn => {
-//     navBtn.addEventListener('click', () => {
-//         document.querySelector('#home').scrollIntoView({behavior:'smooth'});
-//     });
-// });
-
-// navAboutUs.forEach(navBtn => {
-//     navBtn.addEventListener('click', () => {
-//         document.querySelector('#about-us').scrollIntoView({behavior:'smooth'});
-//     });
-// });
-
-// navServices.forEach(navBtn => {
-//     navBtn.addEventListener('click', () => {
-//         document.querySelector('#services').scrollIntoView({behavior:'smooth'});
-//     });
-// });
-
-// navContactUs.forEach(navBtn => {
-//     navBtn.addEventListener('click', () => {
-//         document.querySelector('#contact-us').scrollIntoView({behavior:'smooth'});
-//     });
-// });
-
 btnAddNewItem.addEventListener('click', () => {
 
     let validValues = true;
